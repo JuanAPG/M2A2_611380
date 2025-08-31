@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       th, td{
+        padding: 10px;
+        border: 1px solid black;
+        
+       } 
+       td{
+        width: 300px;
+        
+       }
+       th{
+        font-weight: 100;
+        text-align: left;
+       }
+       h1{
+        text-align: center;
+       }
+       table{
+        border: 1px solid black;
+       }
+    </style>
+    <h1>Inscripción para torneo videojuegos</h1>
+    <br>
+    <form>
+        <table>
+        <tr>
+            <th>Nombre del jugador:
+            <td>
+                <input type="text" minlength="3" maxlength="15" required>
+            </td>
+        </tr>
+        <tr>
+            <th>Correo:
+            <td>
+                <input type="email" required>
+            </td>
+        </tr>
+        <tr>
+            <th>Edad:
+            <td>
+                <input style="width: 50px;" type="number" min="12" max="40" required>
+            </td>
+        </tr>
+        <tr>
+            <th>Nickname:
+            <td>
+                <input type="text" pattern="[a-zA-Z0-9]+">
+            </td>
+        </tr>
+        <tr>
+            <th>Categoría:
+            <td>
+                    
+                <input type="radio" name="categoria"  id="principiante" value="Principiante" required>Principiante
+                <input type="radio" name="categoria" id="intermedio" value="Intermedio">Intermedio
+                <input type="radio" name="categoria" id="experto" value="Experto">Experto
+            </td>
+        </tr>
+        <tr>
+            <th>Juegos favoritos:
+            <td>
+                <input type="checkbox" name="juego" id="fifa" value="FIFA">FIFA
+                <input type="checkbox" name="juego" id="lol" value="LoL">LoL
+                <input type="checkbox" name="juego" id="minecraft" value="Minecraft">Minecraft
+            </td>
+        </tr>
+        <tr>
+            <th>Fecha Inscripción:
+            <td>
+                <input type="date" min="2025-01-01" max="2025-12-31">
+            </td>
+        </tr>
+            <th style="border: 0px;">
+
+            </th>
+            <td style="border: 0px;">
+                <button type="submit">Enviar</button>
+                <button type="reset">Restablecer</button>
+            </td>
+            
+        </tr>
+    </table>
+    </form>
+
+</body>
+</html>
